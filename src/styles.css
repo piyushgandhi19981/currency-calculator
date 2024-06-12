@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid cyan;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background: lightblue;
+}
+
+label {
+  font-size: 24px;
+  padding: 12px;
+}
+
+.amount-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="number"] {
+  height: 30px;
+  outline: 2px solid #66afe9;
+}
+
+input[type="number"]:focus {
+  outline: 2px solid #ff6600;
+}
+
+.convert {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.convert-btn {
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  background: blueviolet;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    border: 0.1px solid #ff6600;
+  }
+}
+
+.new-amount {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  color: green;
+  font-size: 20px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectsir {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background: lightpink;
+  color: white;
+  font-size: 20px;
+}
+
+.select-label {
+  color: white;
+}
+
+.select-container {
+  margin-top: 10px;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+}
+
+.select-option {
+  background: white;
+}
+
+.icon-class {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  margin-right: 15px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: inherit;
+  cursor: pointer;
+}
+
+.swap-container {
+  display: flex;
+}
+
+.swap-btn {
+  margin-top: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.select-option-favorite {
+  background: gray;
+}
+
+.filled {
+  color: yellow;
+}
